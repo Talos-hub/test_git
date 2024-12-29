@@ -43,7 +43,7 @@ func Start() {
 			fmt.Println("Ваш результат", reseelt)
 
 		case 3:
-			m = false
+			Exit(&m)
 		default:
 			fmt.Println("Нет такой команды, попробуйте еще раз")
 
@@ -79,4 +79,8 @@ func ConvertToCelsia(value int) int {
 
 	Result := (value - 32) * 5 / 9
 	return Result
+}
+
+func Exit(m *bool) {
+	*m = false
 }
