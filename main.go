@@ -11,9 +11,9 @@ func main() {
 
 func Start() {
 	var input string // input users
-	t := true        // we need in the  variable because it is
+	var m bool = true
 
-	for t == true {
+	for m == true {
 		fmt.Println("Вас приветствует  программа конвектор температуры")
 		fmt.Println("Выберите то что хотите хотите конвертировать: 1 = F в С, 2: C в F,3 = Exite")
 
@@ -39,13 +39,11 @@ func Start() {
 
 			reseelt := ConvertToCelsia(value)
 
-			fmt.Println("................................")
+			fmt.Println("..............................")
 			fmt.Println("Ваш результат", reseelt)
 
 		case 3:
-			fmt.Println("пока")
-			t = false
-
+			m = false
 		default:
 			fmt.Println("Нет такой команды, попробуйте еще раз")
 
