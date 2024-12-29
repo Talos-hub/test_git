@@ -44,7 +44,7 @@ func Start() {
 		case 3:
 			break
 		default:
-			fmt.Println("Нет такой команды")
+			fmt.Println("Нет такой команды, попробуйте еще раз")
 
 		}
 
